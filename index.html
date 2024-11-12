@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: beige;
+}
+a{
+    text-decoration: none;
+}
+.home1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    padding-top: 7%;
+
+}
+.home-content h1{
+    font-size: 4rem;
+    /* margin-bottom: 1rem; */
+    font-weight: 700;
+    line-height: 1.3;
+span{
+    color: red;
+}
+}
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+}
+.home-img{
+    border-radius: 50%;
+}
+.home-img img{
+    /* position: relative; */
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid red;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid red;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem;
+    transition: 0.3s ease;
+    color: white;
+    cursor: pointer;
+}
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.3) translateY(1.2);
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+.typing-text{
+    font-size: 24px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+    </style>
+</head>
+<body>
+     <section class="home1">
+            <div class="home-img">
+                <img src="12.png" alt="">
+            </div>
+            <div class="home-content">
+            <h1>Hi,  <span><a href="watert.html" class="log in">CLICK HERE</a></span> </h1>
+                <h3 class="typing-text">TO TRACK YOUR WATER USAGE <span></span></h3>
+               
+            <div class="social-icons">
+                <a href="https://www.instagram.com/16ayush_singh/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Ayush16012005"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100073393369852"><i class="fa-brands fa-facebook"></i></a>
+                <a href="www.linkedin.com/in/ayush-singh-383b6924b"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+    
+            </div>
+           
+            </div>
+        </section>     
+  
+</body>
+<script>
+    const params = new URLSearchParams(window.location.search)
+    const name =  params.get('name')
+    const nameholder = document.querySelector('.nameHolder')
+    nameholder.innerHTML = name    
+
+</script>
+</html>
